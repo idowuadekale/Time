@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #bbb;
+    background-size: 200%;
+}
+
+
+/* Beginning code For cursor inside a circle */
+
+.circle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 10000;
+}
+
+.circle::before {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 35px;
+    border: 1.5px solid #105ed3;
+    border-radius: 50%;
+    background: transparent;
+    transform: translate(-50%, -50%);
+    animation: pulse 300ms ease-in-out alternate infinite
+}
+
+@keyframes pulse {
+    from {
+        transform: translate(-50%, -50%) scale(.8);
+    }
+    to {
+        transform: translate(-50%, -50%) scale(1.5);
+    }
+}
+
+
+/* End of code For cursor inside a circle */
+
+.can {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.producer {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+    border-image: auto;
+    letter-spacing: 2px;
+}
+
+h6 {
+    text-align: right;
+    letter-spacing: 2px;
+    font-size: 15px;
+    color: #fff;
+    font-family: sans-serif;
+    font-style: italic;
+    text-decoration-line: underline;
+    margin-top: 10px;
+}
+
+h6:hover {
+    text-transform: uppercase;
+    color: #222;
+    margin-top: 12px;
+}
+
+#link {
+    color: #fff;
+    letter-spacing: 3px;
+    text-align: right;
+    margin-top: 10px;
+}
+
+#link:hover {
+    font-size: 25px;
+    cursor: crosshair;
+    color: #222;
+}
+
+a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000;
+    background: transparent;
+    font-size: bolder;
+}
+
+@media screen and (max-width: 991px) {
+    #canvas {
+        width: 100%;
+    }
+    .container {
+        line-height: 10px;
+    }
+    .pre {
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+}
