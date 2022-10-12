@@ -74,7 +74,7 @@ h6 {
 
 h6:hover {
     text-transform: uppercase;
-    color: #222;
+    color: #f1f0ff;
     margin-top: 12px;
 }
 
@@ -88,7 +88,7 @@ h6:hover {
 #link:hover {
     font-size: 25px;
     cursor: crosshair;
-    color: #222;
+    color: #a6d9dd;
 }
 
 a {
@@ -98,7 +98,7 @@ a {
 }
 
 a:hover {
-    color: #000;
+    color: #d3c7e7;
     background: transparent;
     font-size: bolder;
 }
